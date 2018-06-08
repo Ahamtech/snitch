@@ -41,7 +41,7 @@ defmodule Snitch.Core.Mixfile do
       {:postgrex, "~> 0.13.5"},
       {:ecto, "~> 2.2"},
       {:jason, "~> 1.0"},
-      {:ex_money, "~> 2.5.0"},
+      {:ex_money, "~> 2.6.0"},
       {:credo, "~> 0.9.1", only: :dev, runtime: false},
       {:credo_contrib, "~> 0.1.0-rc3", only: :dev, runtime: false},
       {:as_nested_set, git: "https://github.com/SagarKarwande/as_nested_set.git"},
