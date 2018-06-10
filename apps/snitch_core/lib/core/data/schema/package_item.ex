@@ -65,8 +65,8 @@ defmodule Snitch.Data.Schema.PackageItem do
   # TODO: :backordered can be made a virtual field
   schema "snitch_package_items" do
     field(:state, :string)
-    field(:quantity, :integer)
-    field(:delta, :integer)
+    field(:quantity, :integer, default: 0)
+    field(:delta, :integer, default: 0)
     field(:backordered?, :boolean)
 
     belongs_to(:variant, Variant)
