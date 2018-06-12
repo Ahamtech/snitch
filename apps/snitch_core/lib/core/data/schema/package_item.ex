@@ -39,7 +39,7 @@ defmodule Snitch.Data.Schema.PackageItem do
   use Snitch.Data.Schema
 
   alias Ecto.Nanoid
-  alias Snitch.Data.Schema.{Variant, LineItem, Package}
+  alias Snitch.Data.Schema.{LineItem, Package, Variant}
 
   @typedoc """
   Every fulfilled `LineItem` get shipped in as `PackageItem` in a `Package`.
@@ -64,7 +64,7 @@ defmodule Snitch.Data.Schema.PackageItem do
   @type t :: %__MODULE__{}
 
   schema "snitch_package_items" do
-    field(:number, Ecto.Nanoid, autogenerate: true)
+    field(:number, Nanoid, autogenerate: true)
     field(:state, :string)
     field(:quantity, :integer)
     field(:delta, :integer)
