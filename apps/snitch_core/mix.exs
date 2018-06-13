@@ -57,7 +57,7 @@ defmodule Snitch.Core.Mixfile do
 
       # docs and tests
       {:ex_doc, "~> 0.16", only: :dev, runtime: false},
-      {:excoveralls, "~> 0.8", only: :test},
+      {:excoveralls, "~> 0.8.2", only: :test},
       {:mox, "~> 0.3", only: :test},
       {:ex_machina, "~> 2.2", only: :test},
       {:dialyxir, "~> 0.5", only: [:dev], runtime: false},
